@@ -6,15 +6,21 @@
   <title>Showcase Images </title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
 </head>
 <body>
   <header>
     <div class="header-wrapper">
       <div class="container d-flex align-center justify-between">
-        <div class="header-logo">
-          <a href="#">
-            <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="company-logo">
-          </a>
+        <div class="d-flex align-center">
+          <div class="hamburger-icon">
+            <button onclick="toggleSidebar()"></button>
+          </div>
+          <div class="header-logo">
+            <a href="#">
+              <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="company-logo">
+            </a>
+          </div>
         </div>
         <div class="search-bar-wrapper">
           <input type="text" placeholder="Search Images">
@@ -27,6 +33,10 @@
             Log In
           </a>
         </div>
+        <div class="mobile-menu-header">
+          <button onclick="toggleSearchBar()" class="search-btn"></button>
+          <button onclick="toggleAccountMenu()" class="account-menu-btn"></button>
+        </div>
       </div>
     </div>
   </header>
@@ -35,8 +45,8 @@
     <div class="container">
       <div class="images-list">
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://imgv3.fotor.com/images/cover-photo-image/a-beautiful-girl-with-gray-hair-and-lucxy-neckless-generated-by-Fotor-AI.jpg">
           <div class="image-options d-flex align-center justify-between">
             <a class="d-flex align-center" href="#">
               <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
@@ -49,35 +59,143 @@
           </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://images.nightcafe.studio//assets/tdraw-girl.jpg?tr=w-1200,c-at_max">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://news.artnet.com/app/news-upload/2023/02/Julian-van-Dieken_A-Girl-With-Glowing-Earrings-.png">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://ddgimgs-f43e.kxcdn.com/2057555/l0asos_d2778eb81e62ed98f478b3fcdebb0862b5b4c881.jpg">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://preview.redd.it/the-level-of-detail-in-ai-generated-images-is-blowing-my-v0-6jrtscjfj6ia1.png?width=2048&format=png&auto=webp&s=f227e1b4d17ddd0a7c7658073ce67ef7a546bbdb">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://preview.redd.it/jfrkv1tteo181.jpg?width=640&crop=smart&auto=webp&s=8f5c133c70044c49de17a3c2cce6b795797a6ebd">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://img.freepik.com/premium-photo/futuristic-scifi-fantasy-cyberpunk-woman-artificial-intelligence-cybernetic-technology-concept_598586-2532.jpg?w=2000">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
-        <div class="image-item-wrapper">
-          <img src="https://fujifilm-x.com/wp-content/uploads/2021/01/gfx100s_sample_04_thum-1.jpg">
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://iphoneswallpapers.com/wp-content/uploads/2023/04/Gas-Mask-Hoodie-Guy-iPhone-Wallpaper-HD.jpg">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
         </div>
 
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://st4.depositphotos.com/1483427/25149/i/600/depositphotos_251493776-stock-photo-artificial-intelligence-personified-illustration-science.jpg">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
+        </div>
 
+        <div onclick="handleImageClick(event)" class="image-item-wrapper">
+          <img class="item-img" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/293551662/original/58a88d53fe374c230d5d7eb625f5babe22a9306b/create-a-beautiful-fantasy-landscape-fast.png">
+          <div class="image-options d-flex align-center justify-between">
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/dislike-icon.png">
+              <span>25</span>
+            </a>
+            <a class="d-flex align-center" href="#">
+              <img src="https://ik.imagekit.io/sahildhingra/like-heart-icon.png">
+              <span>453</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" onclick="closeModal(event)">
+    <div class="modal-content">
+      <div class="close-btn" onclick="hideModal()">
+        <button></button>
+      </div>
+      <div class="showcase-img">
+        <img src="">
       </div>
     </div>
   </div>
@@ -85,7 +203,7 @@
   <footer>
     <div class="footer-wrapper">
       <div class="container">
-        <div class="d-flex align-center justify-between">
+        <div class="footer-content d-flex align-center justify-between">
           <ul class="d-flex align-center">
             <li>
               <a href="#">
