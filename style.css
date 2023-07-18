@@ -299,6 +299,105 @@ ul {
   object-fit: contain;
 }
 
+/* Signup / Login */
+.signup-form-wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-section {
+  background-color: var(--secondary);
+  width: 400px;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.form-section > div {
+  flex: 1;
+}
+
+.form-section .artwork {
+  position: relative;
+}
+
+.form-section .artwork::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+}
+
+.form-section .artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px 0 0 5px;
+}
+
+.form-wrapper {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.form-wrapper h1 {
+  color: var(--text-primary);
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+.form-wrapper input {
+  display: block;
+  width: calc(100% - 40px);
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--primary);
+  border: 1px solid var(--tertiary);  
+  color: var(--text-primary);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form-wrapper input::placeholder {
+  color: var(--text-secondary);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.form-group p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.form-group .btn {
+  background: var(--action-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: var(--secondary);
+  font-weight: 600;
+  display: block;
+  border: 1px solid var(--action-color);
+  margin-top: 20px;
+}
+
+.form-group .btn:hover {
+  background: var(--secondary);
+  color: var(--action-color);
+}
+
+.form-group a {
+  color: var(--action-color);
+}
+
 @media (max-width: 1240px) {
   .container {
     margin-left: 20px;

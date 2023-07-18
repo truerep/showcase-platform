@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase Images </title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="container d-flex align-center justify-between">
+        <div class="d-flex align-center">
+          <div class="hamburger-icon">
+            <button onclick="toggleSidebar()"></button>
+          </div>
+          <div class="header-logo">
+            <a href="./">
+              <img src="https://www.goomlandscapes.co.nz/wp-content/uploads/2018/08/logo-placeholder.png" alt="company-logo">
+            </a>
+          </div>
+        </div>
+        <div class="search-bar-wrapper">
+          <input type="text" placeholder="Search Images">
+        </div>
+        <div class="account-cta">
+          <a href=".#" rel="noopener noreferrer">
+            Sign Up
+          </a>
+          <a href="#" rel="noopener noreferrer">
+            Log In
+          </a>
+        </div>
+        <div class="mobile-menu-header">
+          <button onclick="toggleSearchBar()" class="search-btn"></button>
+          <button onclick="toggleAccountMenu()" class="account-menu-btn"></button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-wrapper">
+    <div class="container">
+      <div class="signup-form-wrapper">
+        <div class="form-section d-flex">
+          <!-- <div class="artwork">
+            <img src="https://cdn.dribbble.com/userupload/2738855/file/original-367b29bb5a5ae194a875f52b74be9eb9.jpg?compress=1&resize=752x" alt="">
+          </div> -->
+          <div class="form-wrapper">
+            <h1>Log In</h1>
+            <div class="form-group">
+              <input type="email" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+              <a href="#" class="btn">
+                Log in
+              </a>
+            </div>
+            <div class="form-group">
+              <p>
+                Don't have an account? <a href="./signup.html">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-wrapper">
+      <div class="container">
+        <div class="footer-content d-flex align-center justify-between">
+          <ul class="d-flex align-center">
+            <li>
+              <a href="#">
+                About Us
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Privacy Policy
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Terms n Conditions
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Contact Us
+              </a>
+            </li>
+          </ul>          
+          <span>
+            &copy; Co Name 2023
+          </span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
